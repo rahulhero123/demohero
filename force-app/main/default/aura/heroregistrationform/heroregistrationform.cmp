@@ -1,0 +1,23 @@
+<aura:component controller="employeeinfo" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute type="string" name="formHeading" default="hero fincorp registration form"/>
+    <aura:attribute type="string" name="empname" default=""/>
+    <aura:attribute type="string" name="empfname" default=""/>
+    <aura:attribute type="string" name="empaddress" default=""/>
+    <aura:attribute type="string" name="empdept" default=""/>
+    <aura:attribute type="string" name="empsalary" default=""/>
+    <div class="slds-text-heading_medium">
+       <div class="slds-text-align_center">
+       {!v.formHeading} 
+       </div>
+    </div>
+    <div class="slds-text-heading_medium">
+    <div  class="slds-size_3-of-8">  
+    <lightning:input type="text" name="ename" label="enter the employee name" value="{!v.empname}"/>
+    <lightning:input type="text" name="efname" label="enter the father employee name" value="{!v.empfname}"/>
+    <lightning:input type="text" name="eadd" label="enter the employee address" value="{!v.empaddress}"/>
+    <lightning:input type="text" name="edept" label="enter the employee dept" value="{!v.empdept}"/>
+    <lightning:input type="text" name="esalary" label="enter the employee salary" value="{!v.empsalary}"/>
+    <lightning:button type="text" name="save"  label="submit form" onclick="{!c.mymethod}"/>      
+    </div>
+    </div>
+</aura:component>

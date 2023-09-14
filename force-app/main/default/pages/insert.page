@@ -1,0 +1,28 @@
+<apex:page controller="insertclass1">
+     <apex:form >
+        <apex:pageBlock title="employee_info">
+            <apex:pageBlockButtons >
+                <apex:commandButton value="save" action="{!insert_record}"/>
+                <apex:commandButton value="cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="employee info">
+                    <apex:pageBlockSectionItem >
+                          <apex:outputLabel value="employee name"/>
+                          <apex:inputtext value="{!empname}"/>   
+                    </apex:pageBlockSectionItem><br/>
+                    <apex:pageBlockSectionItem >
+                          <apex:outputLabel value="employee salary"/>
+                          <apex:inputtext value="{!empsalary}"/>   
+                    </apex:pageBlockSectionItem><br/>
+                    <apex:pageBlockSectionItem >
+                          <apex:outputLabel value="employee depart"/>
+                          <apex:inputtext value="{!empdept}"/>   
+                    </apex:pageBlockSectionItem><br/>
+                    <apex:pageBlockSectionItem >
+                          <apex:outputLabel value="employee job"/>
+                          <apex:inputtext value="{!empjob}"/>   
+                    </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+     </apex:form>
+</apex:page>

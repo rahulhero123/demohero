@@ -1,0 +1,6 @@
+<aura:documentation>
+	<aura:description>this component is used to get the information about the new employee into our company </aura:description>
+	<aura:example name="heroempregistrationform" ref="c:heroregistrationform" label="hero fincorp employee registration form">
+		the component is used to get the information abiut the new employee in oour company
+	</aura:example>
+</aura:documentation>
